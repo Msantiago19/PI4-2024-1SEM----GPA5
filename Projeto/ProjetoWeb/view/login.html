@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+
+  <link rel="stylesheet" href="/assets/css/all.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+
+  <title>Bem vindo</title>
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">Teste</h5>
+      <span class="text-muted">testetetet</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <section class=" gradient-form">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black cardLogin">
+            <div class="row g-0">
+              <div class="col-lg-6">
+                <div class="card-body p-md-5 mx-md-4">
+
+                  <div class="text-center">
+                    <img src="/assets/images/logoImgLogin.png" style="width: 185px;" alt="logo">
+                    <img src="/assets/images/logoImgLogin.png" style="width: 185px;" alt="logo">
+                    <!-- <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4> -->
+                  </div>
+
+                  <form id="loginForm" method="post">
+                    <p>Faça login na sua conta</p>
+                
+                    <div class="form-outline mb-4">
+                        <input type="text" id="NomeLogin" class="form-control" placeholder="Digite seu nome" />
+                        <label class="form-label" for="NomeLogin">Nome</label>
+                    </div>
+                
+                    <div class="form-outline mb-4">
+                        <input type="password" id="SenhaLogin" class="form-control" placeholder="Digite sua senha" />
+                        <label class="form-label" for="SenhaLogin">Senha</label>
+                    </div>
+                
+                    <div class="text-center pt-1 mb-5 pb-1">
+                        <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Login</button>
+                        <a class="text-muted" href="#!">Esqueceu sua senha ?</a>
+                    </div>
+                
+                    <div class="d-flex align-items-center justify-content-center pb-4">
+                        <p class="mb-0 me-2">Não tem Cadastro?</p>
+                        <button type="button" class="btn btn-outline-danger btn-SemCadastro">
+                            <a href="../view/cadastro.html">Se cadastre aqui</a>
+                        </button>
+                    </div>
+                </form>
+                
+
+                </div>
+              </div>
+              <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                  <img id="imgLogin" class="imgLogin" src="/assets/images/imgLogin.jpg" alt="">
+                  <img id="imgLogin" class="imgLogin" src="/assets/images/imgLogin.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

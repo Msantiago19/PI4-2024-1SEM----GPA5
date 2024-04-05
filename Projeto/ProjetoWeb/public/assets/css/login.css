@@ -1,0 +1,15 @@
+.imgLogin{
+  width: 145%;
+  height: auto;
+  border-radius: 2%;
+  box-shadow: 5px 5px 5px  rgb(92, 92, 92);
+}
+
+.cardLogin{
+  box-shadow: 3px 3px rgb(134, 134, 134);
+}
+
+.btn-SemCadastro a{
+  text-decoration: none;
+  color: inherit;
+}
