@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/css/all.css">
-  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="../public/assets/css/all.css">
+  <script src="../public/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
   <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
   <title>Bem vindo</title>
 
-  
+
 </head>
+
 <body>
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-      <h5 class="text-white h4">Teste</h5>
-      <span class="text-muted">testetetet</span>
+
+      <div class="conteiner-fluid">
+        <div class="row">
+          <div class="col">
+            <h5>Cadastrar</h5>
+            <ul>
+              <li>Cliente</li>
+              <li>Pedidos</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5>Movimentação</h5>
+            <ul>
+              <li>Pedidos Emitidos</li>
+              <li>Manutenção Pedidos</li>
+              <li>Manutenção Cliente</li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h5>Ajuda</h5>
+            <ul>
+                <li>Sobre nós</li>
+                <li>Whatsapp</li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
     </div>
   </div>
   <nav class="navbar navbar-light bg-dark">
@@ -27,39 +57,59 @@
       </button>
     </div>
   </nav>
-  <section class=" homepage gradient-form">
+  <img src="../public/assets/images/ImgLogoHome.png" class="logoHome" alt="">
+  <section class=" homepage">
     <div class="container h-100">
-
       <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-xl-10">
+        <div class="col-xl-12">
 
-          <div class="card rounded-3">
-              
+          <div class="card card-home">
+
             <div class="row g-0">
-              
+
               <div class="col-lg-6">
                 <div class="card-body p-md-5 mx-md-4">
-                  <h1>Faça seu login aqui!!</h1>
+                  <h1 class="titleHome">Faca seu login <br> <span class="SpanAqui">aqui!!</span></h1>
 
-                  <p>Aqui costura-se sonhos, Prega-se ternura, Remenda-se carinho,  Tecemos alegria e Fabricamos amor!</p>
+                  <p class="textHome">Aqui costura-se sonhos, Prega-se ternura, Remenda-se carinho, Tecemos alegria e
+                    Fabricamos amor!</p>
+                  <div class="row btnsHome">
+                    <div class="col-6">
+                      <button type="submit" class="btn btn-dark mt-4" id="btn-HomeCadastro">Registrar</button>
+                    </div>
+                    <div class="col-6">
+                      <button type="submit" class="btn btn-dark mt-4" id="btn-homeLogin">Login</button>
+                    </div>
 
-                  <button type="submit" class="btn btn-dark mt-4 col-5" id="btn-cadastro">Registrar</button>
-                  <button type="submit" class="btn btn-dark mt-4 col-5" id="btn-cadastro">Registrar</button>
+                  </div>
+
                 </div>
               </div>
               <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                  <img id="imgLogin" class="imgLogin" src="/assets/images/imgLogin.jpg" alt="">
+                  <img id="imgLogin" class="" src="../public/assets/images/imgCelHome.png" alt="">
                 </div>
               </div>
             </div>
 
           </div>
-          
+
         </div>
       </div>
 
     </div>
   </section>
+
+
+  <a href="https://wa.link/jf45be">
+    <img src="../public/assets/images/imgZapHome.png" class="imgZap">
+  </a>
+
+
+  <a href="https://www.google.com/maps/place/Rua+Tapirap%C3%A9s,+130+-+Pedreira,+S%C3%A3o+Paulo+-+SP,+04463-040/@-23.6980469,-46.6613277,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce456582612a8b:0x32fbd7f1dcb53c0!8m2!3d-23.6980469!4d-46.6613277!16s%2Fg%2F11ghrjrt30?entry=ttu"
+    target="_blank"><img src="../public/assets/images/imgHomeLoca.png" class="imgLoca"></a>
+
+
 </body>
+
 </html>
