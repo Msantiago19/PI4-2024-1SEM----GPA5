@@ -1,0 +1,52 @@
+@import"../css/reset.css";
+.cardBemVi{
+  display: flex;
+  margin: 0 auto;
+  border: none;
+}
+
+.titleBemvindo{
+  font-family: 'Balmy';
+  font-weight: 900;
+  color: #000000;
+  font-size:70px;
+}
+
+.textBv{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  width: 720px;
+}
+
+.imgCostureira {
+  width: 304px;
+  height: 295px;
+  position: absolute;
+  right: 0;
+  top: 50px; 
+}
+
+.imgCostureira.menu-open-img {
+  top: 400px;
+}
+
+.imgMaquina{
+  margin-top: -10rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .imgCostureira {
+    width: 404px;
+    height: 395px;
+    position: absolute;
+    right: 0;
+    top: 50px; 
+  }
+
+  .imgMaquina{
+    width: 453px;
+    height: 351px;
+    margin-top: -25rem;
+  }
+}

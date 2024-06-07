@@ -1,0 +1,146 @@
+@import"../css/reset.css";
+
+.cardCadastro {
+  /* height: 500px !important; */
+  margin-top: -100px;
+}
+
+.cardCadastro p {
+  margin-top: 25px;
+  margin-left: 80px;
+}
+
+.titleCadastro {
+  font-size: 60px;
+  FONT-WEIGHT: 400;
+  margin-left: 80px;
+}
+
+label {
+  letter-spacing: 2px;
+}
+
+.inputsCadastro {
+  margin-right: 150px;
+  width: 100%;
+  height: 65px;
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
+}
+
+.card {
+  width: 800px;
+}
+
+form {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.inputsCadastro input::placeholder {
+  display: none;
+  vertical-align: text-bottom;
+  margin-top: -70px;
+  color: #000000;
+}
+
+#btn-cadastro {
+  margin-top: 90px;
+  margin-left: 190px;
+  background-color: #000000;
+  height: 60px;
+  width: 300px;
+}
+
+.imgCriarConta1 {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  /* Ajuste este valor para mover a imagem para cima ou para baixo */
+  width: 300px;
+}
+
+.imgCriarContaBotao3 {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-top: -390px;
+  margin-left: 75px;
+}
+
+.imgCriarContaTesoura2 {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-top: -100px;
+  margin-left: 75px;
+}
+
+
+.imgCriarConta1.menu-open-img {
+  top: 300px;
+  /* Ajuste este valor para mover a imagem para cima quando o menu estiver aberto */
+}
+
+@media screen and (max-width: 1440px) {
+
+  .card {
+    width: 600px;
+  }
+
+
+  .inputsCadastro {
+    margin-right: 150px;
+    width: 100%;
+    height: 50px;
+    /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
+  }
+
+  .logoHome {
+    margin-bottom: 200px;
+    margin-left: 60px;
+    width: 230px;
+  }
+
+  .imgCriarConta1 {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    /* Ajuste este valor para mover a imagem para cima ou para baixo */
+    width: 200px;
+  }
+
+  .imgCriarConta1.menu-open-img {
+    top: 800px;
+  }
+
+  .imgCriarContaBotao3 {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-top: -350px;
+    margin-left: 75px;
+  }
+
+  .imgCriarContaTesoura2 {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-top: -100px;
+    margin-left: 75px;
+  }
+
+  .cardCadastro {
+    /* height: 500px !important; */
+    margin-top: -300px;
+  }
+
+  #btn-cadastro {
+    margin-top: 50px;
+    margin-left: 100px;
+    background-color: #000000;
+    height: 60px;
+    width: 300px;
+  }
+}

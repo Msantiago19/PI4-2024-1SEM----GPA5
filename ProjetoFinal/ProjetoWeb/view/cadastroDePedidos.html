@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/cadastroPedido.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+  <script src="/assets/plugins/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <script src="\assets\plugins\node_modules\select2\dist\js\select2.js"></script>
+  <script src="/assets/scripts/cadastroPedido.js"></script>
+
+  <title>Cadastro Pedido</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="dynamicMenu" class="bg-dark p-4">
+      <!-- O menu dinâmico será inserido aqui -->
+    </div>
+  </div>
+
+
+  <img src="../assets/images/ImgLogoHome.png" class="logoHome">
+  <img src="../assets/images/imgManequinPedido.png" class="imgManequinPedido">
+  <section class="" style="background-color: #fff;">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-8 card border-0">
+          <div class="card-body cardCadPedido">
+            <h1 class="card-title text-center titlePedido"> <img src="../assets/images/imgCadPedido.png"
+                class="ImgPedidos">Cadastro Pedidos</h1>
+            <form id="registroForm" method="POST">
+
+              <div class="row">
+                <div class="col-6">
+                  <label for="CadPedIdCliente">ID Cliente</label>
+                  <input type="text" name="CadPedIdCliente" class="inputsCadPedido" id="CadPedIdCliente">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="CadPedDataRetirada">Data de Retirada</label>
+                  <input type="date" class="inputsCadPedido" id="CadPedDataRetirada" placeholder="Data de Retirada">
+                </div>
+        
+              </div>
+              <div class="row">
+
+                <div class="col-6">
+                  <label for="Cadpedido">Pedido</label>
+                  <select id="selectProduto" class="inputsCadPedido">
+                    <option value="" selected>Selecione um produto</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <label for="CadPedMedida">Medidas</label>
+                  <input type="text" name="CadPedMedida" class="inputsCadPedido" id="CadPedMedida">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6 ">
+                  <label for="CadPedValor">Valor</label>
+                  <input type="text" name="CadPedValor" class="inputsCadPedido" id="CadPedValor" readonly>
+                </div>
+                <div class="col-6">
+                  <label for="QtdCadPedido">Quantidade</label>
+                  <input type="text" name="QtdCadPedido" class="inputsCadPedido" id="QtdCadPedido" readonly>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-around">
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="RadioPagamento" id="RadioDebito" value="debito">
+                  <label class="form-check-label" for="RadioDebito">Debito</label>
+                </div>
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="RadioPagamento" id="RadioCredito" value="credito">
+                  <label class="form-check-label" for="RadioCredito">Crédito</label>
+                </div>
+                <div class="form-check form-check-inline mt-3">
+                  <input class="form-check-input" type="radio" name="RadioPagamento" id="RadioPix" value="pix">
+                  <label class="form-check-label" for="RadioPix">Pix</label>
+                </div>
+              </div>
+
+
+
+              <div class="d-flex justify-content-around btns" style="margin-top: 20px;">
+                <button type="button" id="salvarBtn" class="btn btn-dark btn-Pedido">Salvar</button>
+                <button type="button" id="excluirBtn" class="btn btn-dark btn-Pedido">Excluir</button>
+                <button type="button" id="sairBtn" class="btn btn-dark btn-Pedido">Sair</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+  </section>
+  <script src="/assets/scripts/global.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#selectProduto').select2({
+        width: 'resolve' // precisa disso para redimensionar corretamente com o Bootstrap
+      });
+    });
+  </script>
+</body>
+
+</html>

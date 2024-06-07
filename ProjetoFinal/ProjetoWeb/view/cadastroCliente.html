@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/criarContaCliente.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="/assets/plugins/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <script src="/assets/scripts/cadastroCliente.js"></script>
+
+
+  <title>Cadastrar Cliente</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="dynamicMenu" class="bg-dark p-4">
+      <!-- O menu dinâmico será inserido aqui -->
+    </div>
+  </div>
+
+  <img src="../assets/images/ImgLogoHome.png" class="logoHome">
+  <img src="../assets/images/imgCriarConta1.jpg" class="imgCriarConta1">
+  <section class="" style="background-color: #fff;">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-6 card border-0">
+          <div class="card-body cardCadastro">
+            <h1 class="card-title text-center titleCadastro">Criar nova conta:)</h1>
+            <p class="text-center"><a href="./login" class="link-dark linkLogin">Ou faça o Login aqui</a></p>
+
+            <form id="registroForm" method="POST">
+              <div class="row">
+                <div class="col-6 ">
+                  <label for="nomeCriarConta">Nome</label>
+                  <input type="text" name="nomeCriarConta" class="inputsCadastro" id="nomeCriarConta">
+                </div>
+                <div class="col-6 ">
+                  <label for="telefoneCriarConta">Telefone</label>
+                  <input type="number" name="telefoneCriarConta" class="inputsCadastro" id="telefoneCriarConta">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6 ">
+                  <label for="SenhaCriarConta">Senha</label>
+                  <input type="password" name="senhaCriarConta" class="inputsCadastro" id="senhaCriarConta">
+                </div>
+                <div class="col-6">
+                  <label for="enderecoCriarConta" >Endereço</label>
+                  <input type="text" name="enderecoCriarConta" class="inputsCadastro" id="enderecoCriarConta">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-dark  col-5" id="btn-cadastro">Cadastrar</button>
+              
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <img src="../assets/images/imgCriarContaTesoura2.jpg" class="imgCriarContaTesoura2" alt="">
+    <img src="../assets/images/imgCriarContaBotao.jpg" class="imgCriarContaBotao3" alt="">
+
+  </section>
+  <script src="/assets/scripts/global.js"></script>
+</body>
+
+</html>

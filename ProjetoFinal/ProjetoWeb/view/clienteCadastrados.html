@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/pedidosEmitidos.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+  <script src="/assets/scripts/clientesCadastrados.js"></script>
+  <title>Clientes Cadastrados</title>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="dynamicMenu" class="bg-dark p-4">
+      <!-- O menu dinâmico será inserido aqui -->
+    </div>
+  </div>
+
+  <img src="../assets/images/ImgLogoHome.png" class="logoHome">
+  <section>
+    <div class="container h-100">
+      <div class="card mx-auto w-75 cardBemVi">
+        <div class="card-body">
+          <h1 class="text-center titleEmitidos">Clientes Cadastrados</h1>
+          <div class="table-container">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">N° Cliente</th>
+                  <th scope="col">Cliente</th>
+                  <th scope="col">Telefone</th>
+                  <th scope="col">Endereço</th>
+                </tr>
+              </thead>
+              <tbody id="clienteTabela">
+                <!-- Os clientes serão carregados aqui via JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="/assets/scripts/global.js"></script>
+</html>

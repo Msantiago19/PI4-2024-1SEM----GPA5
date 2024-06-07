@@ -1,0 +1,182 @@
+@import"../css/reset.css";
+
+.inputsCadCliente {
+  width: 390px;
+  height: 65px;
+  margin-left: 25px;
+}
+
+.titlePedido {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 50px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: larger;
+  letter-spacing: 2px;
+  margin-left: 50px;
+}
+
+input {
+  font-size: 25px;
+}
+
+.card-body {
+  margin-top: -250px;
+}
+
+form {
+  margin-top: -10px;
+}
+
+.camposCadPedido {
+  margin-top: 3em !important;
+}
+
+#selectProduto {
+  max-height: 100px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Habilita a rolagem vertical */
+}
+
+.ImgPedidos {
+  width: 100px;
+}
+
+.logoHome {
+  margin-top: 50px;
+  margin-left: 80px;
+}
+
+.btn-Pedido {
+  width: 210px;
+  margin-top: 20px;
+  background-color: #000000;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.form-check-label {
+  margin-left: 5px; /* Ajuste este valor para alterar o espaço entre o input e o label */
+}
+
+.btn-Pedido:hover {
+  background-color: #FFD3D3;
+  color: #000000;
+}
+.imgManequinPedido {
+  position: absolute;
+  right: 0;
+  top: 400px;
+  width: 464px;
+  height: 555.92px;
+  margin-right: 50px;
+  z-index: 9999;
+}
+
+.inputsCadPedido {
+  width: 390px;
+  height: 65px;
+}
+
+.btns{
+  margin-right: 30px;
+}
+
+.select2-container .select2-selection--single {
+  width: 390px;
+  /* Largura do seu campo de entrada */
+  height: 65px;
+  /* Altura do seu campo de entrada */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  line-height: 65px;
+  /* Altura do seu campo de entrada */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 65px;
+  /* Altura do seu campo de entrada */
+}
+
+.imgManequinPedido.menu-open-img{
+  top: 600px;
+}
+@media screen and (max-width: 1440px) {
+  .camposCadPedido {
+    margin-top: 2em !important;
+  }
+
+  form {
+    margin-top: -100px;
+  }
+
+  .titlePedido {
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-size: 30px;
+  }
+
+  label {
+    margin-left: -80px;
+  }
+
+  .imgUsuario {
+    width: 80px;
+  }
+
+  .inputsCadPedido {
+    width: 250px;
+    height: 50px;
+  }
+
+  .select2-container .select2-selection--single {
+    width: 250px;
+    height: 50px;
+  }
+
+  .logoHome {
+    width: 15%;
+    height: 15%;
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+
+  .card-body {
+    margin-top: -150px;
+  }
+
+  input {
+    font-size: 22px;
+  }
+
+  .btn-Pedido {
+    width: 210px;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: #000000;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .btns{
+    margin-right: 150px;
+  }
+
+  .imgManequinPedido {
+    position: absolute;
+    right: 0;
+    top: 280px; /* Ajuste este valor para mover a imagem para cima ou para baixo */
+    width: 264px;
+    height: 355.92px;
+    margin-right: 110px;
+    z-index: 9999;
+  }
+
+  .imgManequinPedido.menu-open-img{
+    top: 600px;
+  }
+}

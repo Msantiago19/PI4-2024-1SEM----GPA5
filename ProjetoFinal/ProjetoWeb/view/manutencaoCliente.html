@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/manutencaoCliente.css">
+  <script src="/assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+  <script src="/assets/plugins/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <script src="/assets/scripts/clienteManutencao.js"></script>
+
+  <title>Manutenção cliente</title>
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="dynamicMenu" class="bg-dark p-4">
+      <!-- O menu dinâmico será inserido aqui -->
+    </div>
+  </div>
+ 
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <img src="../assets/images/ImgLogoHome.png" class="logoHome">
+  <section class="" style="background-color: #fff;">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <h1 class="text-center titlePedido"> <img src="../assets/images/imgManuCliente.png" class="ImgPedidos">Manutencao cliente</h1>
+        <div class="col-md-6 card border-0 ladoesquerdo">
+          <form id="registroForm" method="POST">
+            <div class="card-body cardManuPedido">
+              <div class="row">
+                <div class="col-4">
+                  <div class="form-group Executar">
+                    <label for="idClienteManun" class="labelNum">ID</label>
+                    <input type="text" name="idClienteManun" id="idClienteManun" class="inputnumPedido">
+                    <button type="submit" class="btn btn-dark col-9 btnExecutar" id="btn-executar">Executar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 ladoDireito">
+          <div class="row">
+            <label for="manuPedidoNome" class="labels nome">Nome</label>
+            <input type="text" name="manuPedidoNome" class="inputsManuPedido" id="manuPedidoNome">
+            <label for="manuPedidoTelefone" class="labels">Telefone</label>
+            <input type="text" name="manuPedidoTelefone" class="inputsManuPedido " id="manuPedidoTelefone">
+            <label for="manuPedidoEndereco" class="labels">Endereço</label>
+            <input type="text" name="manuPedidoEndereco" class="inputsManuPedido CampoDeTelefone" id="manuPedidoEndereco">
+          </div>
+        </div>
+        <div class="row btns">
+          <div class="col-3">
+            <button type="submit" class="btn btn-dark col-9 btnCalAtt" id="btn-alterar">Alterar</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-dark col-9 btnCalAtt" id="sairBtn">Sair</button>
+          </div>
+          <div class="col-3">
+            <button type="button" class="btn btn-dark col-9 btnCalAtt" id="btn-excluir">Excluir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/assets/scripts/global.js"></script>
+</body>
+</html>

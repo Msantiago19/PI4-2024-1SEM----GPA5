@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <script src="assets/plugins/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/assets/plugins/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/plugins/node_modules/jquery-ui/dist/jquery-ui.js"></script>
+  <script src="/assets/plugins/node_modules/sweetalert2/dist/sweetalert2.js"></script>
+  <title>Bem vindo</title>
+</head>
+
+<body>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div id="dynamicMenu" class="bg-dark p-4">
+      <!-- O menu dinâmico será inserido aqui -->
+    </div>
+  </div>
+  <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <img src="../assets/images/ImgLogoHome.png" class="logoHomeLog">
+  <img src="../assets/images/ImgLoginCostuUm.jpg" class="imgLoginCostuUm">
+  <section class="sectionLogin">
+    <div class="card w-50 card-login">
+      <div class="card-body cardlogin">
+        <h5 class="card-title text-center titleLogin">LOGIN USUARIO</h5>
+
+        <form action="">
+          <div class="row d-flex flex-column align-items-center">
+            <div class="col-3 inputsLogin">
+              <label for="nomeCadastro">Nome</label>
+              <input type="text" name="nomeCadastro" id="NomeLogin">
+            </div>
+
+            <div class="col-3 inputsLogin">
+              <label for="SenhaCadastro">Senha</label>
+              <input type="password" name="senhaCadastro" id="SenhaLogin" autocomplete="current-password">
+
+            </div>
+
+          </div>
+
+          <div class="btns-Login">
+            <button type="submit" class="btn btn-dark col-3 btnCliLog" id="btn-Cliente">Cliente</button>
+            <button type="submit" class="btn btn-dark col-3 btnCliLog" id="btn-Costureira">Costureira</button>
+          </div>
+
+          <h3 class="text-center esqueceuSenhaLogin"><a href="#" id="esqueceuSenhaLink">Esqueceu a senha</a></h3>
+        </form>
+
+
+      </div>
+    </div>
+
+    <img src="../assets/images/ImgLoginCostuDois.jpg" class="imgLoginDois" alt="">
+  </section>
+
+  <div class="modal fade" id="esqueceuSenhaModal" tabindex="-1" aria-labelledby="esqueceuSenhaModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="esqueceuSenhaModalLabel">Redefinir Senha</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="redefinirSenhaForm">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="novaSenha" class="form-label">Nova Senha</label>
+                        <input type="password" class="form-control" id="novaSenha" required autocomplete="new-password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="confirmarSenha" required autocomplete="new-password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Alterar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script src="/assets/scripts/global.js"></script>
+</body>
+
+</html>

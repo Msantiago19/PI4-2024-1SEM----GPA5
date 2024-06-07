@@ -1,0 +1,144 @@
+@import"../css/reset.css";
+body{
+  overflow-x: hidden;
+}
+.card{
+  border:none !important;
+}
+
+.inputnumPedido{
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+}
+
+.labelNum, .labelNome{
+  font-size: xx-large;
+  letter-spacing: 2px;
+}
+
+.labelNome{
+  margin-left: 70px;
+}
+.imgEmitidoUm {
+  position: absolute;
+  right: 0;
+  top: 120px; /* Ajuste este valor para mover a imagem para cima ou para baixo */
+  width: 364px;
+  height: 391px;
+}
+.imgEmitidoUm.menu-open-img{
+  top: 300px;
+}
+.imgEmitidoDois{
+  width: 277px;
+  height: 248px;
+  margin-top: -150px;
+  margin-left: 40px;
+}
+
+.logoHome{
+  margin-top: 90px;
+  margin-left: 100px;
+}
+.titleEmitidos{
+  font-family: 'Balmy';
+  font-weight: 900;
+  color: #000000;
+  font-size:70px;
+  margin-top: -260px;
+}
+
+.inputnNomePedido{
+  display: block;
+  width: 400px;
+  height: 80px;
+  margin-left: 15px;
+}
+
+.campos{
+  margin-top: 100px;
+}
+
+.inputnumPedido, .inputnNomePedido{
+  margin-top: 30px;
+}
+
+.imgEmitidoUm.menu-open-img{
+  top: 500px;
+}
+
+.table-container {
+  max-height: 600px; 
+  overflow-y: auto; 
+  overflow-x: hidden; 
+}
+@media screen and (max-width:1400px){
+
+  .table-container {
+    max-height: 400px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+  }
+  .inputnumPedido{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+  }
+  
+  .labelNum, .labelNome{
+    font-size: larger;
+    letter-spacing: 2px;
+  }
+  .labelNum{
+    margin-left: 30px;
+  }
+  .labelNome{
+    margin-left: 90px;
+  }
+  .imgEmitidoUm {
+    position: absolute;
+    right: 0;
+    top: 120px; /* Ajuste este valor para mover a imagem para cima ou para baixo */
+    width: 264px;
+    height: 291px;
+  }
+  
+  .imgEmitidoDois{
+    width: 177px;
+    height: 148px;
+    margin-top: -110px;
+    margin-left: 40px;
+  }
+  
+  .logoHome{
+    margin-top: 90px;
+    margin-left: 50px;
+    width: 177px;
+    height: 84.5px;
+  }
+  .titleEmitidos{
+    font-family: 'Balmy';
+    font-weight: 900;
+    color: #000000;
+    font-size:50px;
+    margin-top: -180px;
+  }
+  
+  .inputnNomePedido{
+    display: block;
+    width: 340px;
+    height: 80px;
+    margin-left: 15px;
+  }
+  
+  .campos{
+    margin-top: 20px;
+  }
+  
+  .inputnumPedido, .inputnNomePedido{
+    margin-top: 30px;
+  }
+}
